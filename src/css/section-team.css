@@ -97,13 +97,13 @@
     justify-content: center;
 }
 
-.icon {
+.team-icon {
     display: inline-block;
     width: 1em;
     height: 1em;
     stroke-width: 0;
     stroke: currentColor;
-    fill: currentColor;
+    fill: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -191,5 +191,7 @@
     .team-member {
         width: calc((100% - 48px) / 3);
     }
-
+    .team-container {
+        max-width: 1312px;
+    }
 }
