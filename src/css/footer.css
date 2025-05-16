@@ -1,0 +1,128 @@
+.footer {
+  padding: 48px 0;
+  background: #dfebeb;
+}
+
+.interior-div {
+  padding: 32px;
+
+  background: #f8fbfe;
+  border: 0px solid rgba(13, 11, 10, 0.15);
+  border-radius: 16px;
+}
+.footer-paragraph {
+  padding: 20px 0;
+}
+.input-footer {
+  padding-left: 12px;
+  box-sizing: border-box;
+  height: 42px;
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 12px;
+  background: rgba(13, 11, 10, 0.05);
+}
+.button-footer {
+  display: block;
+  margin: 16px 0 12px 0;
+  padding: 0;
+  height: 46px;
+  width: 100%;
+  font-weight: 500;
+
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 100px;
+  background: rgba(13, 11, 10, 0.05);
+}
+.button-footer:hover {
+  background: #dfebeb;
+}
+
+.paragraph-under-button {
+  font-size: 12px;
+}
+.header {
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 48px 0;
+}
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.links-list > li {
+  font-size: 14px;
+}
+.last-header {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 40px 0;
+  }
+  .interior-div {
+    padding: 40px 32px;
+  }
+  .footer-paragraph {
+    padding: 24 0;
+  }
+  .input-footer {
+    width: 546px;
+  }
+  .button-footer {
+    width: 78px;
+    display: inline;
+    margin: 0;
+  }
+  .footer-form {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 12px;
+  }
+  .lists {
+    flex-direction: row;
+    padding: 40px 0;
+  }
+  .div-item {
+    width: calc((704px - 40px) / 2);
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding: 64px 0;
+  }
+  .div-total-information {
+    display: flex;
+    flex-direction: column;
+  }
+  .interior-div {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 48px;
+  }
+  .input-footer {
+    width: 501px;
+  }
+  .lists {
+    padding: 0;
+    margin-left: auto;
+  }
+  .div-item {
+    width: calc((371px - 40px) / 2);
+  }
+  .last-header {
+    width: 100%;
+  }
+}
