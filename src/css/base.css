@@ -36,22 +36,3 @@ body {
 main {
     flex-grow: 1;
 }
-
-
-/* КНОПКИ */
-
-.button-blu {
-    background-color: #c2d9fc;
-    border: 1px solid #c2d9fc;
-    border-radius: 100px;
-    padding: 10px 24px;
-    min-width: 105px;
-    height: 46px;
-}
-
-.button:hover,
-.button:hover,
-.button:hover,
-.button:hover {
-    background-color: #8eabd7;
-}
