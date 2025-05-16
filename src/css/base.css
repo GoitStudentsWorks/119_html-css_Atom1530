@@ -31,20 +31,35 @@ main {
 /* ЗАГОЛОВОК ТА ТЕКСТ */
 
 .title {
-    font-size: 52px;
+    font-size: 40px;
     letter-spacing: 0.01em;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-weight: 400;
 }
 
 .paragraph {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: center;
     max-width: 768px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    
+.title {
+    font-size: 52px;
+    margin-bottom: 24px;
+
+    }
+
+.paragraph {
+    font-size: 18px;
+
+    }
+
 }
 
 /* КНОПКИ */
@@ -58,9 +73,9 @@ main {
     height: 46px;
 }
 
-.small-button:hover,
-.small-button:hover,
-.big-button:hover,
-.big-button:hover {
+.button:hover,
+.button:hover,
+.button:hover,
+.button:hover {
     background-color: #8eabd7;
 }
