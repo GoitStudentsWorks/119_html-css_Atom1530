@@ -16,6 +16,15 @@
     -webkit-text-size-adjust: 100%;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -39,7 +48,7 @@ main {
 }
 
 .paragraph {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
