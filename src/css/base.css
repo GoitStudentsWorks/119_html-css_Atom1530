@@ -46,6 +46,17 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 52px;
+    margin-bottom: 24px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+}
+
 /* КНОПКИ */
 
 .button {
