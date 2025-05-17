@@ -1,7 +1,7 @@
 .section-four-container {
     text-align: center;
     padding: 64px 0;
-    min-height: 1368px;
+    min-height: 922px;
 }
 
 .section-four-title {
@@ -53,7 +53,9 @@
 @media screen and (min-width: 768px) {
 
     .section-four-container {
-        padding: 40px 0;   
+        padding: 40px 0;
+        min-width: 768px;
+
     }
     .section-four-title {
         margin-bottom: 24px;
@@ -72,6 +74,8 @@
 @media screen and (min-width: 1336px) {
     .section-four-container {
         padding: 112px 0;
+        min-width: 1440px;
+
     }
     .yoga-gallery-list li {
         flex: 0 1 calc((100% - 48px) / 3);
