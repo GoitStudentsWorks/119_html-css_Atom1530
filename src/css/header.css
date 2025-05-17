@@ -15,13 +15,11 @@
   overflow: hidden;
 }
 
-/* .header-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
 /* navigation header  */
+
+.header-navigation-list {
+  display: none;
+}
 
 .header-mob {
   display: flex;
@@ -34,9 +32,6 @@
   fill: #0d0b0a;
   stroke: #0d0b0a;
 }
-/* .header-navigation-list {
-  display: flex;
-} */
 
 /* logo yogabloom */
 .logo-link {
@@ -68,6 +63,32 @@
 @media (min-width: 768px) {
   .header-page {
     height: 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+    max-height: 1440px;
+    height: 72px;
+  }
+  .header-navigation-list {
+    display: flex;
+  }
+  .navbar-button {
+    display: none;
+  }
+  /* .header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+
+  .header-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-mob {
+    display: block;
   }
 }
 
