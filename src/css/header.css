@@ -73,6 +73,14 @@
   }
   .header-navigation-list {
     display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .navigation-item-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0d0b0a;
   }
   .navbar-button {
     display: none;
@@ -88,7 +96,11 @@
     justify-content: space-between;
   }
   .header-mob {
-    display: block;
+    display: flex;
+  }
+  .logo-link {
+    margin-right: 509px;
+    background: #0d0b0a;
   }
 }
 
