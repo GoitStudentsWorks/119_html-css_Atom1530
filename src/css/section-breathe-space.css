@@ -2,6 +2,7 @@
     text-align: center;
     padding: 64px 0;
     min-height: 922px;
+    justify-content: center;
 }
 
 .section-four-title {
@@ -30,6 +31,7 @@
 .yoga-gallery-list {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     gap: 24px;
     padding: 0;
     justify-content: center;
@@ -38,12 +40,13 @@
 }
 
 .yoga-gallery-item {
-    width: 400px;
+    max-width: 400px;
+
 }
 
 .yoga-gallery-list li {
     flex: 1 1 calc((100% - 24px) / 2);
-    max-width: 155px;
+
 }
 
 /* ---------- Tablet ---------- */
@@ -54,7 +57,7 @@
 
     .section-four-container {
         padding: 40px 0;
-        min-width: 768px;
+
 
     }
     .section-four-title {
@@ -64,6 +67,7 @@
     .section-four-paragraph {
         margin-bottom: 80px;
     }
+
     .yoga-gallery-list li {
         max-width: 340px;       
     }
@@ -74,7 +78,7 @@
 @media screen and (min-width: 1336px) {
     .section-four-container {
         padding: 112px 0;
-        min-width: 1440px;
+        max-width: 1440px;
 
     }
     .yoga-gallery-list li {
