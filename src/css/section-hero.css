@@ -1,0 +1,114 @@
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 48px 16px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hero-text-buttons {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  min-width: 160px;
+  text-align: center;
+}
+
+.button.join {
+  background-color: #c2d9fc;
+  color: #000;
+}
+
+.button.join:hover {
+  background-color: #8eabd7;
+}
+
+.button.learn-more {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.button.learn-more:hover {
+  background-color: #ddd;
+}
+
+/* 💻 Точка перелома: планшет (768px) */
+@media (min-width: 768px) {
+  .hero-content {
+    padding: 40px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* 🖥 Точка перелома: десктоп (1336px) */
+@media (min-width: 1336px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    border-radius: 16px;
+  }
+
+  .hero-image {
+    width: 50%;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .hero-content {
+    width: 50%;
+    text-align: left;
+    padding: 60px;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+}

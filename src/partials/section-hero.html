@@ -1,3 +1,47 @@
-<section>
-  <div class="container"></div>
+<section class="hero">
+  <div class="container">
+    <picture>
+      <source
+        media="(min-width: 1336px)"
+        srcset="
+          img/img-for-desk/hero-desk.jpg   1x,
+          img/img-for-desk/hero-desk@2.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          img/img-for-tabl/hero-tabl.jpg   1x,
+          img/img-for-tabl/hero-tabl@2.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 374px)"
+        srcset="
+          img/img-for-mob/herol.jpg       1x,
+          img/img-for-mob/hero-hero@2.jpg 2x
+        "
+      />
+      <img
+        src="img/img-for-desk/hero-desk.jpg"
+        alt="Yoga Pose at Sunset"
+        class="hero-image"
+        width="375"
+      />
+    </picture>
+    <div class="hero-content">
+      <h1 class="hero-title">Transform Your Life with Our Yoga Courses</h1>
+      <div class="hero-text-buttons">
+        <p class="hero-description">
+          Discover the harmony of mind and body through our expertly designed
+          yoga programs. Join a community dedicated to wellness and personal
+          growth.
+        </p>
+        <div class="hero-buttons">
+          <a href="#pricing" class="button join">Join</a>
+          <a href="#gallery" class="button learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
