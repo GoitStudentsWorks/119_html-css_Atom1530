@@ -98,11 +98,7 @@
 }
 
 /* Styles for Desktop devices */
-<<<<<<< HEAD
-@media only screen and (min-width: 1336px) {
-=======
-@media only screen and (min-width: 1200px) {
->>>>>>> ee5d5c3059c9596fe398022c0e8c08a2b8f18543
+@media only screen and (min-width: 1336px) {}
   .footer {
     padding: 64px 0;
   }
