@@ -16,6 +16,15 @@
     -webkit-text-size-adjust: 100%;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -26,56 +35,4 @@ body {
 
 main {
     flex-grow: 1;
-}
-
-/* ЗАГОЛОВОК ТА ТЕКСТ */
-
-.title {
-    font-size: 40px;
-    letter-spacing: 0.01em;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-.paragraph {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    max-width: 768px;
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-    
-.title {
-    font-size: 52px;
-    margin-bottom: 24px;
-
-    }
-
-.paragraph {
-    font-size: 18px;
-
-    }
-
-}
-
-/* КНОПКИ */
-
-.button {
-    background-color: #c2d9fc;
-    border: 1px solid #c2d9fc;
-    border-radius: 100px;
-    padding: 10px 24px;
-    min-width: 105px;
-    height: 46px;
-}
-
-.button:hover,
-.button:hover,
-.button:hover,
-.button:hover {
-    background-color: #8eabd7;
 }
