@@ -4,7 +4,7 @@
       <nav class="header-navigation">
         <ul class="header-navigation-list">
           <li class="navigation-list-item">
-            <a class="navigation-item-link" href="">Yoga Classes</a>
+            <a class="navigation-item-link current" href="">Yoga Classes</a>
           </li>
           <li class="navigation-list-item">
             <a class="navigation-item-link" href="">Team</a>
@@ -33,31 +33,48 @@
             </svg>
           </a>
           <!-- a-Join -->
-          <a class="link-join" href="#"> <p class="join-p">Join</p></a>
+
+          <a class="link-join" href="#">
+            <span class="join-text">Join</span>
+            <span class="join-now-text">Join Now</span>
+          </a>
         </div>
       </nav>
     </div>
   </div>
 
   <!-- navbar mobile menu -->
-  <!-- <div class="navbar-menu">
+  <div class="navbar-menu is-open">
     <div class="container navbar-menu-container">
-      <button type="button" class="navbar-close">
-        <svg class="navbar-close-svg" width="12" height="12">
-          <use href="/src/img/sprite.svg#icon-yoga-bloom"></use>
-        </svg>
-      </button>
-      <nav class="navbar-navigation">
+      <div class="header-mob">
+        <button type="button" class="navbar-close">
+          <svg class="navbar-close-svg" width="48" height="48">
+            <use href="/src/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <!-- logo yogabloom -->
+        <a class="logo-link" href="/src/index.html">
+          <svg class="logo-link-svg" width="108" height="32">
+            <use href="/src/img/sprite.svg#icon-yoga-bloom"></use>
+          </svg>
+        </a>
+        <!-- a-Join -->
+        <a class="link-join" href="#">
+          <p class="join-p">Join Now</p>
+        </a>
+      </div>
+      <nav class="navbar-navigation marking">
         <ul class="navbar-list">
-          <li class="navbar-item"><a href="navbar-link"></a></li>
-          <li class="navbar-item"><a href="navbar-link"></a></li>
-          <li class="navbar-item"><a href="navbar-link"></a></li>
-          <li class="navbar-item"><a href="navbar-link"></a></li>
-          <li class="navbar-item"><a href="navbar-link"></a></li>
+          <li class="navbar-item"><a href="navbar-link">Yoga Classes</a></li>
+          <li class="navbar-item"><a href="navbar-link">Team</a></li>
+          <li class="navbar-item"><a href="navbar-link">Testimonials</a></li>
+          <li class="navbar-item"><a href="navbar-link">Prising</a></li>
+          <li class="navbar-item"><a href="navbar-link">Contacts</a></li>
         </ul>
       </nav>
 
-      <a href=""></a>
+      <a class="navbar-link-join" href="">Join</a>
     </div>
-  </div> -->
+  </div>
 </header>

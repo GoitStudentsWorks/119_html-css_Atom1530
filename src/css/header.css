@@ -36,6 +36,7 @@
 /* logo yogabloom */
 .logo-link {
   display: flex;
+  background: #3faac5;
 }
 .logo-link-svg {
   stroke: black;
@@ -57,12 +58,97 @@
   color: #0d0b0a;
 }
 .join-p {
-  padding: 4px 22px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
 }
 
+/* navbar mobile menu */
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2fafa;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.navbar-close {
+  padding: 0;
+  width: 48px;
+  height: 48px;
+}
+.navbar-close-svg {
+  fill: #0d0b0a;
+  stroke: #fff;
+}
+.marking {
+  margin-top: 16px;
+  margin-bottom: 276px;
+  display: flex;
+}
+.navbar-item {
+  padding: 16px 0px;
+  width: 343px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+}
+
+.navbar-link-join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c2d9fc;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  width: 343px;
+  height: 46px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  margin-bottom: 160px;
+}
+.join-text {
+  display: flex;
+  align-items: center;
+}
+.join-now-text {
+  display: none;
+}
 @media (min-width: 768px) {
   .header-page {
     height: 72px;
+  }
+
+  .navbar-link-join {
+    width: 204px;
+    height: 46px;
+  }
+  .link-join {
+    width: 105px;
+    height: 42px;
+  }
+
+  .join-text {
+    display: none;
+  }
+
+  .join-now-text {
+    display: inline;
+    padding: 8px 0;
   }
 }
 
@@ -82,14 +168,22 @@
     line-height: 1.6;
     color: #0d0b0a;
   }
+  .navigation-item-link.current {
+    position: relative;
+  }
+  .navigation-item-link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #868584;
+  }
   .navbar-button {
     display: none;
   }
-  /* .header-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
 
   .header-navigation {
     display: flex;
@@ -100,8 +194,8 @@
   }
   .logo-link {
     margin-right: 509px;
-    background: #3faac5;
+  }
+  .navbar-menu {
+    display: none;
   }
 }
-
-/* navbar mobile menu */
