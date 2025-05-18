@@ -36,7 +36,6 @@
 /* logo yogabloom */
 .logo-link {
   display: flex;
-  background: #3faac5;
 }
 .logo-link-svg {
   stroke: black;
