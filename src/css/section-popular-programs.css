@@ -15,32 +15,23 @@ body {
     padding: 40px 0;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .programs-section {
     background-color: unset;
     padding: 112px 0;
   }
 }
-.container {
-  max-width: 375px;
-  padding: 0 16px;
+.programs-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .programs- container {
     max-width: 768px;
     padding: 0 32px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 64px;
   }
 }
 .programs-span {
@@ -59,7 +50,7 @@ body {
     margin-bottom: 14px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .programs-span {
     margin-bottom: 16px;
   }
@@ -81,7 +72,7 @@ body {
     margin-bottom: 24px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .programs-title {
     width: 768px;
     font-size: 52px;
@@ -110,7 +101,7 @@ body {
     max-width: 704px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .main-description {
     max-width: 768px;
   }
@@ -125,7 +116,7 @@ body {
     margin-bottom: 16px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .programs-section picture,
   .programs-section img {
     margin-bottom: 32px;
@@ -148,7 +139,7 @@ body {
     margin-bottom: 0;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .programs-name {
     font-size: 36px;
     margin-bottom: 24px;
@@ -168,7 +159,7 @@ body {
     row-gap: 27px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .yoga-type-list {
     row-gap: 0;
   }
@@ -185,7 +176,7 @@ body {
     flex-basis: 100%;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1336px) {
   .yoga-type {
     flex-basis: calc((100% - 48px) / 3);
   }
