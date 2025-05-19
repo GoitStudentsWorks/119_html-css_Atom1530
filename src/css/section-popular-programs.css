@@ -220,6 +220,10 @@ body {
   .programs-join-btn {
     width: 108px;
     height: 44px;
+    background-color: #c2d9fc;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 10px 24px;
   }
   .mobile-only {
     position: absolute;
