@@ -1,29 +1,7 @@
 
-
-.hide-on-scroll {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: transform 0.3s ease;
-  z-index: 999;
-}
-
-.hide-on-scroll.hidden {
-  transform: translateY(-100%);
-}
-
 .header-page {
   height: 64px;
-  position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #f1fafa;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-   z-index: 999;
 }
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -97,11 +75,10 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateY(-100%);
-  transition: transform 800ms ease, opacity 300ms ease, visibility 300ms ease;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar-menu.is-open {
-  transform: translateY(0);
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -109,7 +86,6 @@
 .navbar-close {
   padding: 0;
   width: 48px;
-
   height: 48px;
   background-color: transparent;
   border: none;
@@ -118,7 +94,7 @@
   fill: #000;
 }
 .marking {
-
+  margin-top: 16px;
   margin-bottom: 276px;
   display: flex;
 }
@@ -154,6 +130,8 @@
 .join-now-text {
   display: none;
 }
+
+
 @media (min-width: 768px) {
   .header-page {
     height: 72px;
@@ -179,16 +157,6 @@
 }
 
 @media (min-width: 1336px) {
-
-
-  .header-container {
-    max-height: 1440px;
-    height: 72px;
-  }
-    .header-container-add {
-  display: flex;
-   justify-content: space-between;
-    }
 
   .header-navigation-list {
     display: flex;
