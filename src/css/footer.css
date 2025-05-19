@@ -140,3 +140,6 @@
   gap: 12px;
   align-items: center;
 }
+.item-list-footer:hover .span-footer {
+  color: blue;
+}
