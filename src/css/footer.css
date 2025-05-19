@@ -17,10 +17,16 @@
   box-sizing: border-box;
   height: 42px;
   width: 100%;
-
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 12px;
   background: rgba(13, 11, 10, 0.05);
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем обводку при фокусе */
+
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+.input-footer:focus,
+.input-footer:hover {
+  background-color: #dfebeb;
 }
 .button-footer {
   display: block;
@@ -32,7 +38,8 @@
 
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 100px;
-  background: rgba(13, 11, 10, 0.05);
+
+  transition: background-color 0.3s ease;
 }
 .button-footer:hover {
   background: #dfebeb;
@@ -125,3 +132,6 @@
     width: 100%;
   }
 }
+/* svg {
+  border: 1px solid red;
+} */
