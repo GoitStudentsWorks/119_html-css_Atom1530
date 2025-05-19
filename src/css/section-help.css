@@ -1,0 +1,195 @@
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 64px;
+    }
+}
+.yoga-section {
+    background: #dfebeb;
+}
+
+.yoga-help {
+    padding: 64px 0;
+    text-align: center;
+    justify-content: center;
+}
+.container-title {
+    width: 343px;
+    height: 168px;
+    margin-bottom: 48px;
+}
+.yoga-help-main-title {
+    font: 400 40px / 120% "Cabin", sans-serif;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    padding-bottom: 20px;
+}
+.yoga-help-main-title-text {
+    font: 400 16px / 160% "Sarabun", sans-serif;
+    text-align: center;
+    color: #0d0b0a;
+}
+.yoga-help-reasons-container {
+    margin-bottom: 48px;
+}
+.yoga-help-reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+}
+.yoga-help-reasons-item {
+    max-width: 343px;
+}
+.yoga-help-reasons {
+   display: flex;
+   flex-direction: column;
+}
+.yoga-help-reasons-heading {
+    font: 400 24px / 140% "Cabin", sans-serif;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 20px;
+}
+.yoga-help-reasons-text {
+    font: 400 16px / 160% "Sarabun", sans-serif;
+    text-align: center;
+    color: #0d0b0a;
+}
+.button {
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    width: 343px;
+    height: 46px;
+    background-color: #c2d9fc;
+    cursor: pointer;
+    font: 500 16px / 160% "Sarabun", sans-serif;
+    color: #0d0b0a;
+    margin-bottom: 64px;
+}
+.button-join:hover,
+.button-join:focus {
+    background-color: rgba(13, 11, 10, 0.05);
+}
+.join-button .desktop-text {
+    display: none; 
+}
+.join-button .mobile-text {
+    display: inline; 
+}
+
+@media only screen and (min-width: 768px) {
+    .yoga-section {
+        background: #f2fafa;
+        }
+    .yoga-help {
+         padding: 80px 0 40px 0;
+    }
+    .container-title {
+        width: 704px;
+        height: 141px;
+        margin-bottom: 0;
+    }
+    .yoga-help-reasons-container {
+        margin-bottom: 0;   
+    }
+    .yoga-help-main-title {
+        padding-bottom: 24px;
+    }
+    .yoga-help-main-title-text {
+        font: 400 18px / 160% "Sarabun", sans-serif;
+    }
+    
+    .yoga-help-reasons-list {
+        column-gap: 24px;
+        row-gap: 46.5px;
+        width: 704px;
+        height: 345px;
+    }
+    .yoga-help-reasons-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .yoga-help-reasons-heading {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .button {
+        padding: 10px 24px;
+        width: 110px;
+        margin-bottom: 0;
+        padding-bottom: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition-duration: 250ms;
+    }
+    
+    .join-button .desktop-text {
+        display: inline;
+    }
+    
+    .join-button .mobile-text {
+        display: none;   
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .yoga-help {
+        padding: 112px 0 40px 0;
+    }
+    .container-title {
+        width: 768px;
+        height: 115px;
+        margin-bottom: 40px;
+    }
+    .yoga-help-reasons-list {
+        column-gap: 24px;
+        row-gap: 46.5px;
+        width: 1312px;
+        height: 206px;
+    }
+    .yoga-help-main-title {
+        font: 400 52px / 120% "Cabin", sans-serif;
+    }
+    .yoga-help-reasons-container {
+        width: 1312px;
+ 
+    }
+    .yoga-help-reasons-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+    .yoga-help-reasons-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
+    .yoga-help-reasons-heading {
+        font: 400 28px / 140% "Cabin", sans-serif;
+        margin-bottom: 24px;
+    }
+        
+        .join-button .desktop-text {
+            display: inline;
+        }
+    
+        .join-button .mobile-text {
+            display: none;   
+        }
+}
