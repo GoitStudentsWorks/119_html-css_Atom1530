@@ -1,21 +1,7 @@
 
-main {
-  padding-top: 64px;
-
-}
 .header-page {
   height: 64px;
-  position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: #f1fafa;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-
 }
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -100,7 +86,6 @@ main {
 .navbar-close {
   padding: 0;
   width: 48px;
-
   height: 48px;
   background-color: transparent;
   border: none;
@@ -109,7 +94,7 @@ main {
   fill: #000;
 }
 .marking {
-
+  margin-top: 16px;
   margin-bottom: 276px;
   display: flex;
 }
@@ -145,6 +130,8 @@ main {
 .join-now-text {
   display: none;
 }
+
+
 @media (min-width: 768px) {
   .header-page {
     height: 72px;
@@ -170,10 +157,7 @@ main {
 }
 
 @media (min-width: 1336px) {
-  .header-container {
-    max-height: 1440px;
-    height: 72px;
-  }
+
   .header-navigation-list {
     display: flex;
     gap: 32px;

@@ -3,11 +3,7 @@
     <div class="header-section">
       <nav class="header-navigation">
         <ul class="header-navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-item-link current" href="#yoga-classes"
-              >Yoga Classes</a
-            >
-          </li>
+          <li class="navigation-list-item"></li>
           <li class="navigation-list-item">
             <a class="navigation-item-link" href="#team">Team</a>
           </li>
@@ -25,7 +21,7 @@
         </ul>
         <div class="header-mob">
           <!-- logo navbar -->
-          <button type="button" class="navbar-button">
+          <button type="button" class="navbar-button" data-modal-open>
             <svg class="navbar-svg" width="16" height="12">
               <use href="../img/sprite.svg#icon-navbar"></use>
             </svg>
@@ -48,10 +44,10 @@
 </header>
 
 <!-- navbar mobile menu -->
-<div class="navbar-menu">
-  <div class="container navbar-menu-container">
+<div class="navbar-menu" data-modal>
+  <div class="container header-container">
     <div class="header-mob">
-      <button type="button" class="navbar-close">
+      <button type="button" class="navbar-close" data-modal-close>
         <svg class="navbar-close-svg" width="12" height="12">
           <use href="../img/sprite.svg#icon-close"></use>
         </svg>
