@@ -135,3 +135,8 @@
 /* svg {
   border: 1px solid red;
 } */
+.icon-div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
