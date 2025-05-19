@@ -1,0 +1,209 @@
+/* 
+/* Section Styling */
+
+.pricing-section {
+  padding: 64px 0;
+  text-align: center;
+}
+
+.subheading {
+font-size: 16px;
+margin-bottom: 12px;
+font-family: "Sarabun", sans-serif;
+font-weight: 600;
+line-height: 150%;
+
+}
+
+.heading{
+margin-bottom: 20px;
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: 0.01em;
+text-align: center;
+
+}
+
+.description {
+margin-bottom: 48px;
+font-family: "Sarabun", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+margin-bottom: 48px;
+}
+
+.pricing-card {
+  border: 0px solid rgba(13, 11, 10, 0.15);
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 16px;
+  min-width: 343px;
+  max-width: 421px;
+  background: #dfebeb;
+}
+
+
+/* Pricing Cards Container */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 0px solid rgba(13, 11, 10, 0.15);
+  border-radius: 16px
+}
+
+.additional-container-for-price {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.h3tit{
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+margin-bottom: 8px;
+font-size: 18px;
+line-height: 140%;
+letter-spacing: 0.01em;
+text-align: center;
+}
+
+
+.price {
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+font-size: 44px;
+line-height: 120%;
+letter-spacing: 0.01em;
+text-align: center;
+color: #0d0b0a;
+margin-bottom: 24px;
+}
+
+.ulontwo {
+  margin-bottom: 32px;
+  text-align: start;
+}
+
+.liil {
+font-family: "Sarabun", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+margin-bottom: 16px;
+}
+
+
+.butontwo {
+font-weight: 500;
+font-size: 16px; 
+line-height: 160%;
+
+border: 1px solid #c2d9fc;
+border-radius: 100px;
+padding: 10px 24px;
+min-width: 100%;
+height: 46px;
+background: #c2d9fc;
+}
+
+
+/* Desktop Layout */
+@media screen and (min-width: 768px) {
+
+  .pricing-section {
+     padding: 40px 0;
+  }
+
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+   }
+
+  .additional-container-for-price {
+    flex-direction: row;
+    gap: 24px; }
+
+
+  .description {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+   .pricing-card {
+    padding: 32px;
+    flex: 1 1 calc(50% - 12px);
+}
+   .additional-style {
+    min-width: 100%;
+
+}
+}
+
+@media screen and (min-width: 1336px){
+
+
+  .heading {
+    font-size: 52px;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    margin-bottom: 24px;
+  } 
+
+  .pricing-container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+}
+
+.ulthree {
+  margin-bottom: 32px;
+}
+
+
+.butonthre {
+  margin-top: 32px;
+}
+
+
+.pricing-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.subheading {
+  margin-bottom: 16px;
+}
+
+
+.h3tit {
+  font-size: 22px;
+}
+
+.three80 {
+  width: 100%;
+}
+
+
+.thprice {
+  text-align: left;
+}
+
+.twopart {
+  text-align: left;
+}
+
+.price {
+  margin-bottom: 32px;
+  font-size: 72px;
+} 

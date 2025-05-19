@@ -1,0 +1,197 @@
+.backdrop-one {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    background-color: #dfebeb;
+
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.backdrop-one.is-open {
+    display: flex; }
+
+.modal-container {
+    padding: 64px 16px 112px 16px;
+    max-width: 375px;
+    width: 100%;
+
+    background-color: #dfebeb;
+
+}
+
+.button-wrapper {
+    text-align: center;
+
+}
+
+.modal-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.modal-plan {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+
+}
+
+.modal-price {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 32px;
+
+}
+
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    margin-bottom: 24px;
+}
+
+.modal-label {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:1.6;
+
+}
+
+.modal-input {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 100%px;
+    height: 42px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    padding: 8px 16px 8px 12px;
+    background-color:  rgba(13, 11, 10, 0.05);;
+}
+
+
+.checkout-btn {
+    border: 1px solid #c2d9fc;
+    padding: 10px 24px;
+    border-radius: 100px;
+    background-color: #c2d9fc;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #aea3f8;
+}
+
+@media only screen and (min-width: 768px) { 
+    .backdrop-one {
+    background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .checkout-btn {
+    width: 155px;
+
+    }
+
+    .modal-container {
+        padding: 64px 92px;
+        max-width: 704px;
+        min-height: 573px;
+        border-radius: 16px;
+    }
+    .modal-title {
+        font-size: 52px;
+        margin-bottom: 24px;
+
+    }
+    .modal-plan {
+        font-size: 22px;
+    }
+    .modal-price {
+        font-size: 36px;
+        line-height: 1.4;
+        margin-bottom: 24px;
+    }    
+
+    .modal-form {
+        display: flex;
+        flex-direction: column;
+
+    
+        }
+
+    .modal-row {
+        display: flex;
+        gap: 24px;
+                }
+}
+
+    
+@media only screen and (min-width:1336px) {
+
+    .modal-container {
+        padding: 64px;
+        max-width: 768px;
+        min-height: 573px;
+    }
+    
+    .modal-title {
+            font-family: "Cabin", sans-serif;
+            font-weight: 400;
+            font-size: 52px;
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    
+        .modal-plan {
+
+            font-size: 22px;
+
+        }
+    
+        .modal-price {
+            font-family: "Cabin", sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 1.4;
+            letter-spacing: 0.01em;
+            text-align: center;
+    
+        }
+
+    
+    
+
+}
