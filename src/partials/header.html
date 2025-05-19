@@ -1,7 +1,92 @@
-<header class="header">
-  <div class="container">
-    <svg>
-      <use href="/img/public/sprite.svg#icon-chek"></use>
-    </svg>
+<header class="header-page">
+  <div class="container header-container">
+    <div class="header-container-add">
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="navigation-list-item"></li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#team">Team</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#pricing">Prising</a>
+          </li>
+          <li class="navigation-list-item">
+            <a class="navigation-item-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-mob">
+        <!-- logo navbar -->
+        <button type="button" class="navbar-button" id="menuToggleBtn">
+          <svg class="navbar-svg" width="16" height="12">
+            <use id="menuIcon" href="../img/sprite.svg#icon-navbar"></use>
+          </svg>
+        </button>
+
+        <!-- logo yogabloom -->
+        <a class="logo-link" href="/src/index.html">
+          <svg class="logo-link-svg" width="83" height="23">
+            <use href="../img/sprite.svg#icon-yoga-bloom"></use>
+          </svg>
+        </a>
+        <!-- a-Join -->
+        <a class="link-join" href="#">
+          <span class="join-text">Join</span>
+          <span class="join-now-text">Join Now</span>
+        </a>
+      </div>
+    </div>
   </div>
 </header>
+
+<!-- navbar mobile menu -->
+<div class="navbar-menu" data-modal>
+  <div class="container header-container">
+    <div class="header-mob">
+      <button type="button" class="navbar-button" id="menuToggleBtn">
+        <svg class="navbar-svg" width="16" height="12">
+          <use id="menuIcon" href="../img/sprite.svg#icon-navbar"></use>
+        </svg>
+      </button>
+
+      <!-- logo yogabloom -->
+      <a class="logo-link" href="/src/index.html">
+        <svg class="logo-link-svg" width="83" height="23">
+          <use href="../img/sprite.svg#icon-yoga-bloom"></use>
+        </svg>
+      </a>
+      <!--a-Join -->
+
+      <a class="link-join" href="">
+        <span class="join-text">Join</span>
+        <span class="join-now-text">Join Now</span>
+      </a>
+    </div>
+    <nav class="navbar-navigation marking">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" href="#yoga-classes">Yoga Classes</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#team">Team</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#pricing">Prising</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="navbar-link-join" href="">Join</a>
+  </div>
+</div>
