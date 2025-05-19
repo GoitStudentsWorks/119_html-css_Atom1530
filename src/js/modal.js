@@ -38,6 +38,27 @@ closeBtn.addEventListener('click', () => {
     document.body.style.overflow = '';
   });
 
+  
+  const menuToggleBtn = document.getElementById('menuToggleBtn');
+  const menuIcon = document.getElementById('menuIcon');
+  const modal = document.querySelector('[data-modal]');
+
+  let isOpen = false;
+
+  menuToggleBtn.addEventListener('click', () => {
+    isOpen = !isOpen;
+    modal.classList.toggle('is-open'); // добавь этот класс в CSS
+
+    if (isOpen) {
+      menuIcon.setAttribute('href', '../img/sprite.svg#icon-close');
+    } else {
+      menuIcon.setAttribute('href', '../img/sprite.svg#icon-navbar');
+    }
+  });
+
+
+
+
   // Бургер-меню
   const menuRefs = {
     openBtn: document.querySelector('[data-menu-open]'),
@@ -73,4 +94,6 @@ closeBtn.addEventListener('click', () => {
     });
   });
 })();
+
+
 
