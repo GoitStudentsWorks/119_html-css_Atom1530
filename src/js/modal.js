@@ -38,7 +38,7 @@ closeBtn.addEventListener('click', () => {
     document.body.style.overflow = '';
   });
 
-  
+
   const menuToggleBtn = document.getElementById('menuToggleBtn');
   const menuIcon = document.getElementById('menuIcon');
   const modal = document.querySelector('[data-modal]');
@@ -56,6 +56,22 @@ closeBtn.addEventListener('click', () => {
     }
   });
 
+let lastScrollTop = 0;
+const header = document.querySelector('.hide-on-scroll');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Скролл вниз — прячем хедер
+    header.classList.add('hidden');
+  } else {
+    // Скролл вверх — показываем хедер
+    header.classList.remove('hidden');
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
 
 
 
