@@ -90,6 +90,11 @@
   min-width: 329px;
 }
 
+.button.join-button:hover,
+.button.join-button:focus {
+  background-color: #aeceff;
+}
+
 
 
 .button.learn-more {
@@ -98,7 +103,10 @@
   min-width: 329px;
 }
 
-
+.button.learn-more:hover, 
+.button.learn-more:focus {
+  background-color: #e2e0dd;
+}
 /* hero tablet */
 
 @media (min-width: 768px) {

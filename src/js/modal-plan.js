@@ -2,7 +2,7 @@ const modal = document.querySelector('.backdrop-one');
 const modalPlan = document.querySelector('.modal-plan');
 const modalPrice = document.querySelector('.modal-price');
 const closeBtn = document.querySelector('[data-modal-close]');
-const openBtns = document.querySelectorAll('.butontwo');
+const openBtns = document.querySelectorAll('.card__button');
 
 openBtns.forEach(btn => {
   btn.addEventListener('click', () => {
