@@ -81,10 +81,6 @@
   flex-shrink: 0;
 }
 
-.features-list {
-  margin-bottom: 32px;
-}
-
 .card__button {
   background-color: #c2d9fc;
   border: 0px solid rgba(13, 11, 10, 0.15);
@@ -96,6 +92,7 @@
   font-size: 16px;
   line-height: 1.6;
   width: 100%;
+  margin-top: 32px;
 }
 
 .card__button.tablet-only {
@@ -163,12 +160,17 @@
     gap: 24px;
   }
 
+  .features-list {
+    margin-bottom: 0;
+  }
+
   .card__button.mobdesk-only {
     display: none;
   }
 
   .card__button.tablet-only {
     display: block;
+    margin: 0 auto;
   }
 }
 
