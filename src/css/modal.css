@@ -109,9 +109,6 @@
     transition: background-color 0.3s ease;
 }
 
-.checkout-btn:hover {
-    background-color: #aea3f8;
-}
 
 @media only screen and (min-width: 768px) { 
     .backdrop-one {

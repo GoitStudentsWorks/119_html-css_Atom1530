@@ -1,0 +1,177 @@
+
+.yoga-section {
+    background: #dfebeb;
+    padding: 64px 0;
+}
+.yoga-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.container-title {
+    width: 343px;
+    height: 168px;
+    margin-bottom: 48px;
+}
+.yoga-help-main-title {
+    font: 400 40px / 120% "Cabin", sans-serif;
+    letter-spacing: 0.01em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.yoga-help-main-title-text {
+    font: 400 16px / 160% "Sarabun", sans-serif;
+    text-align: center;
+}
+.yoga-help-reasons-container {
+    margin-bottom: 48px;
+    max-width: 1312px;
+
+}
+.yoga-help-reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1312px;
+    justify-content: center;
+    gap: 48px;
+}
+.yoga-help-reasons-item {
+    max-width: 343px;
+}
+.yoga-help-reasons {
+   display: flex;
+   flex-direction: column;
+
+}
+.yoga-help-reasons-heading {
+    font: 400 24px / 140% "Cabin", sans-serif;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.yoga-help-reasons-text {
+    font: 400 16px / 160% "Sarabun", sans-serif;
+    text-align: center;
+}
+.button-yoga {
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    width: 343px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2d9fc;
+    cursor: pointer;
+    font: 500 16px / 160% "Sarabun", sans-serif;
+}
+.button-yoga .desktop-text {
+    display: none; 
+}
+.button-yoga .mobile-text {
+    display: inline; 
+}
+
+@media only screen and (min-width: 768px) {
+    .yoga-section {
+        background: #f2fafa;
+        padding: 40px 0;
+    }
+    .container-title {
+        width: 704px;
+        height: 141px;
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    .yoga-help-reasons-container {
+        margin-bottom: 40px;   
+    }
+    .yoga-help-main-title {
+        padding-bottom: 24px;
+    }
+    .yoga-help-main-title-text {
+        font: 400 18px / 160% "Sarabun", sans-serif;
+    }
+    
+    .yoga-help-reasons-list {
+        column-gap: 24px;
+        row-gap: 46.5px;
+
+        height: 345px;
+    }
+    .yoga-help-reasons-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .yoga-help-reasons-heading {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .button-yoga {
+        padding: 10px 24px;
+        width: 110px;
+        height: 46px;
+        white-space: nowrap;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition-duration: 250ms;
+    }
+    .desktop-text {
+        font-size: 16px;
+    }
+.button-yoga .desktop-text {
+        display: inline;
+    }
+.button-yoga .mobile-text {
+        display: none;   
+    }
+}
+
+@media only screen and (min-width: 1336px) {
+    .yoga-section {
+        padding: 112px 0;
+    }
+     .container-title {
+        width: 768px;
+        height: 115px;
+    }
+    .yoga-help-reasons-list {
+        column-gap: 24px;
+        row-gap: 46.5px;
+        max-width: 1312px;
+        flex-wrap: nowrap;
+        height: 206px;
+    }
+    .yoga-help-main-title {
+        font: 400 52px / 120% "Cabin", sans-serif;
+    }
+    .yoga-help-reasons-container {
+     
+        padding-top: 40px;
+    }
+    .yoga-help-reasons-list {
+        gap: 24px;
+    }
+    .yoga-help-reasons-item {
+        flex-basis: calc((100% - 72px) / 4);
+        max-width: 310px;
+
+    }
+    .yoga-help-reasons-heading {
+        font: 400 28px / 140% "Cabin", sans-serif;
+        margin-bottom: 24px;
+
+    }
+        
+    .button-yoga .desktop-text {
+        display: inline;
+    }
+    
+    .button-yoga .mobile-text {
+        display: none;   
+    }
+}
