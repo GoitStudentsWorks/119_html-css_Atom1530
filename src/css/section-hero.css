@@ -90,9 +90,7 @@
   min-width: 329px;
 }
 
-.button.join-button:hover {
-  background-color: #aea3f8;
-}
+
 
 .button.learn-more {
   border: 1px solid rgba(255, 255, 255, 0);
@@ -100,9 +98,6 @@
   min-width: 329px;
 }
 
-.button.learn-more:hover {
-  background-color: #ddd;
-}
 
 /* hero tablet */
 

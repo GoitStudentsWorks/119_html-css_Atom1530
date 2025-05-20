@@ -34,3 +34,25 @@ main {
   padding-top: 64px; 
 }
 
+/* BASE button STYLE */
+
+.btn-blue-hover:hover,
+.btn-blue-hover:focus {
+  background-color: #aeceff;
+
+}
+
+.btn-milk-hover:hover,
+.btn-milk-hover:focus {
+  background-color: #e2e0dd;
+
+}
+
+svg{
+  outline: none;
+}
+
+svg:hover {
+  fill: #012a67;
+
+}

@@ -24,10 +24,8 @@
   border-radius: 12px;
   transition: background-color 0.3s ease;
 }
-.input-footer:focus,
-.input-footer:hover {
-  background-color: #dfebeb;
-}
+
+
 .button-footer {
   display: block;
   margin: 16px 0 12px 0;
@@ -41,9 +39,7 @@
 
   transition: background-color 0.3s ease;
 }
-.button-footer:hover {
-  background: #dfebeb;
-}
+
 
 .paragraph-under-button {
   font-size: 12px;
@@ -135,3 +131,11 @@
 /* svg {
   border: 1px solid red;
 } */
+.icon-div { 
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.item-list-footer:hover .span-footer {
+  color: #4a90e2;
+}
