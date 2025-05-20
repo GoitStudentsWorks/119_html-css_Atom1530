@@ -58,12 +58,8 @@ body {
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
   font-size: 40px;
-
-  /* line-height: 48px; */
   line-height: 1.2;
   letter-spacing: 0.01em;
-  text-align: center;
-  color: #000000;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) {
@@ -72,7 +68,7 @@ body {
   }
 }
 @media only screen and (min-width: 1336px) {
-  .programs-title {
+  .pop-program-h {
     width: 768px;
     font-size: 52px;
   }

@@ -48,11 +48,29 @@ main {
 
 }
 
-svg{
+.svg-hover{
   outline: none;
 }
 
-svg:hover {
+.svg-hover:hover {
   fill: #012a67;
 
+}
+
+/* BASE main STYLE  */
+
+.base-h {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width:768px) {
+  base-h {
+    margin-bottom: 24px;
+  }
 }
