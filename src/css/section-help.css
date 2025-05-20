@@ -5,7 +5,7 @@
 }
 .yoga-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -27,10 +27,14 @@
 }
 .yoga-help-reasons-container {
     margin-bottom: 48px;
+    max-width: 1312px;
+
 }
 .yoga-help-reasons-list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1312px;
     justify-content: center;
     gap: 48px;
 }
@@ -40,6 +44,7 @@
 .yoga-help-reasons {
    display: flex;
    flex-direction: column;
+
 }
 .yoga-help-reasons-heading {
     font: 400 24px / 140% "Cabin", sans-serif;
@@ -56,6 +61,9 @@
     border-radius: 100px;
     width: 343px;
     height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #c2d9fc;
     cursor: pointer;
     font: 500 16px / 160% "Sarabun", sans-serif;
@@ -95,7 +103,7 @@
     .yoga-help-reasons-list {
         column-gap: 24px;
         row-gap: 46.5px;
-        width: 704px;
+
         height: 345px;
     }
     .yoga-help-reasons-item {
@@ -138,26 +146,29 @@
     .yoga-help-reasons-list {
         column-gap: 24px;
         row-gap: 46.5px;
-        width: 1312px;
+        max-width: 1312px;
+        flex-wrap: nowrap;
         height: 206px;
     }
     .yoga-help-main-title {
         font: 400 52px / 120% "Cabin", sans-serif;
     }
     .yoga-help-reasons-container {
-        width: 1312px;
+     
         padding-top: 40px;
     }
     .yoga-help-reasons-list {
-        flex-wrap: nowrap;
         gap: 24px;
     }
     .yoga-help-reasons-item {
         flex-basis: calc((100% - 72px) / 4);
+        max-width: 310px;
+
     }
     .yoga-help-reasons-heading {
         font: 400 28px / 140% "Cabin", sans-serif;
         margin-bottom: 24px;
+
     }
         
     .button-yoga .desktop-text {
