@@ -28,6 +28,8 @@
     height: 24px;
     position: absolute;
     top: 24px;
+
+    border: none;
     right: 24px;
     display: flex;
     align-items: center;
