@@ -17,11 +17,15 @@
   box-sizing: border-box;
   height: 42px;
   width: 100%;
-
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 12px;
   background: rgba(13, 11, 10, 0.05);
+  border: none; /* Убираем рамку */
+  outline: none; /* Убираем обводку при фокусе */
+
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
 }
+
+
 .button-footer {
   display: block;
   margin: 16px 0 12px 0;
@@ -32,11 +36,10 @@
 
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 100px;
-  background: rgba(13, 11, 10, 0.05);
+
+  transition: background-color 0.3s ease;
 }
-.button-footer:hover {
-  background: #dfebeb;
-}
+
 
 .paragraph-under-button {
   font-size: 12px;
@@ -124,4 +127,15 @@
   .last-header {
     width: 100%;
   }
+}
+/* svg {
+  border: 1px solid red;
+} */
+.icon-div { 
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.item-list-footer:hover .span-footer {
+  color: #4a90e2;
 }
