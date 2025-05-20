@@ -15,12 +15,8 @@
     height: 168px;
     margin-bottom: 48px;
 }
-.yoga-help-main-title {
-    font: 400 40px / 120% "Cabin", sans-serif;
-    letter-spacing: 0.01em;
-    text-align: center;
-    padding-bottom: 20px;
-}
+ 
+
 .yoga-help-main-title-text {
     font: 400 16px / 160% "Sarabun", sans-serif;
     text-align: center;
@@ -147,7 +143,7 @@
         height: 206px;
     }
     .yoga-help-main-title {
-        font: 400 52px / 120% "Cabin", sans-serif;
+        font-size: 52px;
     }
     .yoga-help-reasons-container {
      
