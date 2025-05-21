@@ -76,7 +76,7 @@ menuRefs.closeBtn?.addEventListener('click', () => {
 // Закрытие data-modal по якорю и скролл
 const burgerMenu = document.querySelector('[data-modal]');
 
-document.querySelectorAll('.navbar-link').forEach(link => {
+document.querySelectorAll('.navbar-link, .navbar-link-join, .link-join').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
 
@@ -86,6 +86,8 @@ document.querySelectorAll('.navbar-link').forEach(link => {
     // Закрываем бургер-меню
     if (burgerMenu?.classList.contains('is-open')) {
       burgerMenu.classList.remove('is-open');
+      isOpen = false; // ⬅️ обязательно сбросить флаг
+      menuIcon.setAttribute('href', `${spritePath}#icon-navbar`); // ⬅️ меняем иконку обратно
       document.body.style.overflow = '';
     }
 
@@ -104,3 +106,4 @@ document.querySelectorAll('.navbar-link').forEach(link => {
     }
   });
 });
+
