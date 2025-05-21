@@ -59,9 +59,14 @@
   flex-direction: column;
   gap: 16px;
 }
+
+
 .links-list > li {
   font-size: 14px;
 }
+
+.links-list  a 
+
 .last-header {
   font-size: 14px;
   font-weight: 400;
@@ -85,7 +90,7 @@
     display: inline;
     margin: 0;
   }
-  
+
   .footer-form {
     display: flex;
     column-gap: 16px;
@@ -140,3 +145,7 @@
 .item-list-footer:hover .span-footer {
   color: #4a90e2;
 }
+
+.links-list-it:hover {
+    color: #4a90e2;
+  }
