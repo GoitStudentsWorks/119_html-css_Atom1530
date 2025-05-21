@@ -85,6 +85,7 @@
     display: inline;
     margin: 0;
   }
+  
   .footer-form {
     display: flex;
     column-gap: 16px;
