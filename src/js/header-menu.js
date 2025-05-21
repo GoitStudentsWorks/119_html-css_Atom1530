@@ -1,3 +1,6 @@
+import spritePath from '../img/sprite.svg?url';
+console.log('✅ spritePath:', spritePath);
+
 const menuToggleBtn = document.getElementById('menuToggleBtn');
 const menuIcon = document.getElementById('menuIcon');
 const modal = document.querySelector('[data-modal]');
@@ -10,7 +13,10 @@ let disableHideOnScroll = false;
 menuToggleBtn?.addEventListener('click', () => {
   isOpen = !isOpen;
   modal.classList.toggle('is-open');
-  menuIcon.setAttribute('href', isOpen ? 'img/sprite.svg#icon-close' : 'img/sprite.svg#icon-navbar');
+  menuIcon.setAttribute('href', isOpen
+    ? `${spritePath}#icon-close`
+    : `${spritePath}#icon-navbar`
+  );
 });
 
 // Скролл — показать/спрятать хедер (если разрешено)
