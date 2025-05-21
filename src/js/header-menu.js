@@ -13,10 +13,10 @@ let disableHideOnScroll = false;
 menuToggleBtn?.addEventListener('click', () => {
   isOpen = !isOpen;
   modal.classList.toggle('is-open');
-  menuIcon.setAttribute('href', isOpen
-    ? `${spritePath}#icon-close`
-    : `${spritePath}#icon-navbar`
-  );
+ menuIcon.setAttribute('href', isOpen
+  ? `${spritePath}#icon-close`
+  : `${spritePath}#icon-navbar`
+);
 });
 
 // Скролл — показать/спрятать хедер (если разрешено)
@@ -73,18 +73,34 @@ menuRefs.closeBtn?.addEventListener('click', () => {
   document.body.style.overflow = '';
 });
 
-// Закрытие меню по клику на якорь
+// Закрытие data-modal по якорю и скролл
+const burgerMenu = document.querySelector('[data-modal]');
+
 document.querySelectorAll('.navbar-link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
+
     const targetId = link.getAttribute('href');
     const targetSection = document.querySelector(targetId);
 
-    menuRefs.menu.classList.remove('is-open');
-    document.body.style.overflow = '';
+    // Закрываем бургер-меню
+    if (burgerMenu?.classList.contains('is-open')) {
+      burgerMenu.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
 
+    // Скроллим к нужной секции
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
+      disableHideOnScroll = true;
+
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+      setTimeout(() => {
+        disableHideOnScroll = false;
+      }, 1000);
     }
   });
 });
