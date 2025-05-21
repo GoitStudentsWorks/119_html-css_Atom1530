@@ -10,7 +10,7 @@ let disableHideOnScroll = false;
 menuToggleBtn?.addEventListener('click', () => {
   isOpen = !isOpen;
   modal.classList.toggle('is-open');
-  menuIcon.setAttribute('href', isOpen ? '/img/sprite.svg#icon-close' : '/img/sprite.svg#icon-navbar');
+  menuIcon.setAttribute('href', isOpen ? './img/sprite.svg#icon-close' : './img/sprite.svg#icon-navbar');
 });
 
 // Скролл — показать/спрятать хедер (если разрешено)
