@@ -217,6 +217,10 @@
     transform: scaleX(1);
   }
 
+  .navigation-item-link.current::after {
+    transform: scaleX(1);
+    }
+
   .navbar-button {
     display: none;
   }

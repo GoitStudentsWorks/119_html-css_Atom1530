@@ -134,7 +134,11 @@
 
   .card__title {
     font-size: 22px;
+
   }
+  .pricing-card:nth-child(3) .card__title {
+      margin-bottom: 0;
+    }
 
   .card__price {
     font-size: 72px;
@@ -214,6 +218,7 @@
 
   .card__title {
     font-size: 22px;
+    
   }
 
   .card__price {

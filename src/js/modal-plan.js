@@ -20,4 +20,12 @@ closeBtn.addEventListener('click', () => {
 });
 
 
+document.querySelectorAll('.navigation-item-link').forEach(link => {
+  link.addEventListener('click', function () {
+    document.querySelectorAll('.navigation-item-link').forEach(el => {
+      el.classList.remove('current');
+    });
+    this.classList.add('current');
+  });
+});
 

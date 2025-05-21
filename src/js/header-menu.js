@@ -1,39 +1,54 @@
-
 const menuToggleBtn = document.getElementById('menuToggleBtn');
 const menuIcon = document.getElementById('menuIcon');
 const modal = document.querySelector('[data-modal]');
-
-let isOpen = false;
-
-menuToggleBtn.addEventListener('click', () => {
-  isOpen = !isOpen;
-  modal.classList.toggle('is-open'); // добавь этот класс в CSS
-
-  if (isOpen) {
-    menuIcon.setAttribute('href', '/img/sprite.svg#icon-close');
-  } else {
-    menuIcon.setAttribute('href', '/img/sprite.svg#icon-navbar');
-  }
-});
-
-let lastScrollTop = 0;
 const header = document.querySelector('.hide-on-scroll');
+let isOpen = false;
+let lastScrollTop = 0;
+let disableHideOnScroll = false;
 
-window.addEventListener('scroll', () => {
-const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-if (scrollTop > lastScrollTop) {
-  // Скролл вниз — прячем хедер
-  header.classList.add('hidden');
-} else {
-  // Скролл вверх — показываем хедер
-  header.classList.remove('hidden');
-}
-
-lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+// Переключение иконки и меню
+menuToggleBtn?.addEventListener('click', () => {
+  isOpen = !isOpen;
+  modal.classList.toggle('is-open');
+  menuIcon.setAttribute('href', isOpen ? '/img/sprite.svg#icon-close' : '/img/sprite.svg#icon-navbar');
 });
 
+// Скролл — показать/спрятать хедер (если разрешено)
+window.addEventListener('scroll', () => {
+  if (disableHideOnScroll || modal.classList.contains('is-open')) return;
 
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    header.classList.add('hidden');
+  } else {
+    header.classList.remove('hidden');
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+// Якорные ссылки — плавно и без скрытия хедера
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    if (!target) return;
+
+    e.preventDefault();
+    disableHideOnScroll = true;
+
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+
+    setTimeout(() => {
+      disableHideOnScroll = false;
+    }, 1000);
+  });
+});
 
 // Бургер-меню
 const menuRefs = {
@@ -52,10 +67,8 @@ menuRefs.closeBtn?.addEventListener('click', () => {
   document.body.style.overflow = '';
 });
 
-// Закрытие меню по клику на ссылку
-const navLinks = document.querySelectorAll('.navbar-link');
-
-navLinks.forEach(link => {
+// Закрытие меню по клику на якорь
+document.querySelectorAll('.navbar-link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     const targetId = link.getAttribute('href');
