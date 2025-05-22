@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/yogabloom-website/",
+    "build": "vite build --base=/119_html-css_Atom1530/",
     "preview": "vite preview"
   },
   "devDependencies": {
